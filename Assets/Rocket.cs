@@ -17,11 +17,11 @@ public class Rocket : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        ProcessInput();
+        rotateRocket();
         Thrust();
     }
 
-    private void ProcessInput()
+    private void rotateRocket()
     {
         rigidBody.freezeRotation = true;
 
